@@ -1,13 +1,6 @@
-# GitHub Codespaces ♥️ Flask
+# flask lesson
+- Python code: [app.py](app.py)
+- HTML page 1: [index.html](templates/index.html)
+- HTML page 2: [page2.html](templates/page2.html)
 
-Welcome to your shiny new Codespace running Flask! We've got everything fired up and running for you to explore Flask.
-
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
-
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
-
-To run this application:
-
-```
-flask --debug run
-```
+For next week: try creating a website with 2 GET routes/requests that show different pages. On one of the pages, include a form that goes to a POST request and does something with your form. 
