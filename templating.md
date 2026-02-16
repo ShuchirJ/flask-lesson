@@ -28,4 +28,4 @@ in HTML:
 {% endfor %}
 ```
 
-For this to work, you need to make fruits a list in Python first then a variable in HTML like I made `name` a variable in `[app.py](/app.py)` on line 13.
+For this to work, you need to make fruits a list in Python first then a variable in HTML like I made `name` a variable in [`app.py`](/app.py) on line 13.
