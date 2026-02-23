@@ -2,24 +2,16 @@
     <head>
     </head>
     <body>
-        <div>
-            <p>Plain <b><i>text</i></b></p>
-            <a href="https://google.com"><img width="200" height="100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzIYJTzuI35t3y9PCr3D6j0cNUDelYBJM6NOT77Ehr0JpCSBHiFcNqSIeeR6ghe1_ipEDXjlbWW8mg2PDEDQ4mD9BuVecKgN92AlnztiIUA&s=10"></a>
-        </div>
-        <hr>
-        <ol>
-            <li>Pie</li>
-            <li>Cheese</li>
-        </ol>
-        <hr width="50%">
-
         <form method="post" action="/">
-            <input name="name" placeholder="this is the placeholder"> 
-            <button>submit</button>
+            <input name="message" placeholder="Type your message here..." />
+            <button>Submit</button>
         </form>
-        <!-- no quotes/special chars in input names -->
+
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            <input type="hidden" value="something">
+            {% endfor %}
+        </ul>
     </body>
 </html>
-
-<!-- make a website about your favorite animal:
-have at least 1 header, 1 p tag, 1 link, and 1 image -->
