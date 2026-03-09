@@ -14,6 +14,12 @@ def accept_message():
     messages.append(message)
     return redirect("/") # sends the browser to the GET route
 
+@app.post("/delete")
+def delete_message():
+   message = request.form['message']
+   messages.remove(message)
+   return redirect("/")
+
 """
 Add a delete button next to each list item,
 The button should be in a form next to a hidden input that has the message to remove,

@@ -9,8 +9,10 @@
 
         <ul>
             {% for message in messages %}
-            <li>{{ message }}</li>
-            <input type="hidden" value="something">
+            <form method="post" action="/delete">
+                <li>{{ message }} <button>DELETE</button></li>
+                <input type="hidden" name="message" value="{{ message }}">
+            </form>
             {% endfor %}
         </ul>
     </body>
